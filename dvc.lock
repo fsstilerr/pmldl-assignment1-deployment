@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  prepare_data:
+    cmd: python code/datasets/prepare_data.py
+    deps:
+    - path: code/datasets/prepare_data.py
+      hash: md5
+      md5: e3a332fb0891b9b58bac0624e48e4656
+      size: 2287
+    - path: data/raw/penguins.csv
+      hash: md5
+      md5: fe476a8c016f86659acb9e58ae98f4a9
+      size: 13478
+    outs:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 54a9e5b8c958ef67cea94d44b26433bb
+      size: 3089
+    - path: data/processed/train.csv
+      hash: md5
+      md5: 64e3eda18daa1a1f57d2fcf985abc643
+      size: 12083
