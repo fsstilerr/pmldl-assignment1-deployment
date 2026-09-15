@@ -1,13 +1,13 @@
 .venv/
+.git/
 __pycache__/
 *.pyc
 .DS_Store
 
-mlruns/
 mlflow.db
+mlruns/
 mlartifacts/
 
-data/processed/
-models/
+data/
 metrics/
-logs/
+scripts/
